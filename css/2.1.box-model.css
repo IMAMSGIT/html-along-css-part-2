@@ -1,0 +1,5 @@
+p {
+/* padding has 4 property like border */
+    padding: 10px 20px ;
+    border: 5px solid gold;
+}
