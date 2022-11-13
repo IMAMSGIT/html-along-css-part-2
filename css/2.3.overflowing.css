@@ -1,0 +1,10 @@
+.box {
+
+
+    border: 3px solid gold;
+    width: 150px;
+    height: 150px;
+    overflow:hidden auto;
+    /* overflow have visible, scroll, hidden auto  etc porperty
+    hidden auto will show if overflowed */
+}
