@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* will apply both pseudo elelemts. problem solved */
+
+.box::before {
+    content: 'Hello';
+}
+
+/* this is a universal selector, but should not be used
+applied all the elements 
+problem is, it is not applied on peudo elements*/
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    /* padding: 20px;
+border: 10px solid green; */
+    /* margin only puts the box up and down */
+    /* box-sizing: border-box; */
+    display: inline-block;
+}
