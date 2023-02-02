@@ -1,9 +1,9 @@
+/* content , padding, border, margin
+padding is space between content and border
+we use margin to space or separate element 
+and padding element o space between border and content
+*/
 p {
-    /* padding has 4 property like border */
-        /* padding: 10px 20px ;
-        border: 5px solid gold; */
-        margin: 20px;
-        padding: 0;
-        /* this is best for reducing space between 2 elements
-        called margin collapsing */
-    }
+  padding: 10px 20px;
+  border: 5px solid gold;
+}
