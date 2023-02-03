@@ -1,0 +1,42 @@
+/* CPBM */
+
+/* 
+Unversal selector to select all element, peudo too  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Adding content using pseudo element  */
+.box::before {
+  content: "Hello There";
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  /* When we add padding it increases box size 
+  with the added actual box  */
+  padding: 30px;
+  border: 10px solid black;
+  /* Margin moves away from position */
+  margin: 30px;
+  /* It retains actual size substracting padding etc */
+  box-sizing: border-box;
+}
+
+/* since it's a span , working inlinely 
+To overcome the inline nature
+we should change display property
+*/
+.another_box::before {
+  content: "Hello";
+}
+.another_box {
+  width: 100px;
+  height: 100px;
+
+  background-color: gold;
+  display: inline-block;
+}
