@@ -1,0 +1,20 @@
+/* html has 2 types units 
+Absolute(px,pt,in,cm,mm {these 3 used for printing}.)
+Relative(%, relative to size of container/ parent)
+            (vw,vh- reltive to viewport)
+            (em,rem- relative to font size)  */
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  margin: 10px;
+}
+.box {
+  /* width: 50%- it wil get 150px as body width is 300px */
+  width: 50%;
+  height: 100vh; /* Get desired result */
+  /*height: 100%;*/ /* Will not get vertical half size */
+  border-top: 2px solid black; /* For this the default body element height is 3px  */
+  background-color: gold;
+}
