@@ -1,0 +1,42 @@
+/* boxes is the parent of three boxes 
+To position each boxes absolutely
+first make the parent relative, not children */
+body {
+  margin: 10px;
+  height: 200vh;
+}
+.boxes {
+  border: 3px solid lightgray;
+  position: relative;
+}
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* By default the position is static,
+means not positioned 
+So, first make it ralative
+*/
+
+.box-one {
+  background-color: gold;
+}
+
+.box-two {
+  background-color: tomato;
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
+  /* right: 0;
+  bottom: 0; */
+  /* left: 3rem; */
+  z-index: 1;
+  /* bottom: 3rem; */
+}
+
+.box-three {
+  background-color: dodgerblue;
+}
