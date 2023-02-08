@@ -1,0 +1,39 @@
+.body {
+  margin: 10px;
+}
+
+/* When direction of flex in column
+2 property
+main set to vertical(column)
+cross set to horizontal
+To align items
+justify-content(along the main axis)
+align-items(along the cross axis)
+*/
+.container {
+  border: 3px solid lightgrey;
+  /* Making it flex, default flex-direction: row; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+  /* align-content: center; */
+}
+.box {
+  /* As we set direction as row, width increases
+  flex-basis: 10rem; */
+  flex-basis: 5rem;
+  flex-grow: 1;
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+}
+
+/* To move up  
+.box-one {
+  flex-grow: 0;
+   align-self: flex-start; 
+}
+*/
