@@ -1,0 +1,28 @@
+body {
+  margin: 5px;
+}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  /* To make avatar float */
+  float: left;
+  margin-right: 0.5rem;
+}
+/* No use */
+/* .clear {
+  clear: left;
+} */
+
+.tweet {
+  border: 3px solid grey;
+}
+
+/* To solve parent collapsing issue 
+named it after general name
+*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
