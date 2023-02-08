@@ -1,0 +1,7 @@
+.first {
+  /* Completely hides it, space also */
+  display: none;
+
+  /* keeps hidden but not its line */
+  /* visibility: hidden; */
+}
