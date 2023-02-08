@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+
+  /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
+
+  /* Another way of creating rows and columns */
+  grid-template: 100px auto 100px / 30fr 70fr;
+
+  /* To put an item in the grid in specific area */
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    ". footer";
+
+  gap: 10px;
+
+  /* justify-items for horizontal
+  align-items for vertical 
+  for an individual element
+  default is strech
+  */
+  justify-items: stretch;
+  align-items: stretch;
+
+  /* The below are used to 
+  position the entire container */
+  /* justify-content: center;
+  align-content: center; */
+  border: 3px solid grey;
+  height: 100vh;
+}
+.box {
+  /* width: 5rem; */
+  /* height: 5rem; */
+  background-color: gold;
+}
+.box-one {
+  /* grid-column: 1 / 3; */
+  /* grid-row: 2; */
+  /* grid-area: 1 / 1 / 1 / 3; */
+  grid-area: header;
+}
+.box-four {
+  grid-area: footer;
+}
