@@ -1,0 +1,15 @@
+body {
+  /* Get repeated automatically */
+  background: url(../images/bg-sanfrancisco.jpg);
+  /* To remove repeatation */
+  background-repeat: no-repeat;
+  /* As body is a block level element
+  it's default height is zero
+  So, it vanishes
+  background-size: 100% 100%; */
+
+  height: 300vh;
+  /* Same acheived by just typing*/
+  background-size: cover;
+  background-attachment: fixed;
+}
