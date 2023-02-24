@@ -1,0 +1,19 @@
+/* If we want to get the 2 div same color 
+we have to copy same twice */
+
+/* So to solve this problem
+we can declare one global variable as Root and
+then use it  */
+
+:root {
+  --color-primary: #ffdd36;
+  --border-size: 2px;
+  --border-radius: 10px;
+}
+.one {
+  background: var(--color-primary);
+}
+
+.two {
+  background: var(--color-primary);
+}
